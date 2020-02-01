@@ -5,8 +5,10 @@ Example how to run a GUI app from a container
 
 ### Using docker compose
 docker-compose build
+
 docker-compose up
 
 ### Using docker run
 docker build .
+
 docker run -d --net=host --env DISPLAY --volume="$XAUTHORITY:/root/.Xauthority:rw" gui-app
